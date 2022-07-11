@@ -71,7 +71,7 @@ td {
 .shape {
     position: absolute;
     width: 100px;
-    left: 15px;
+    left: 18px;
     top: 20px;
     
 }
@@ -82,4 +82,16 @@ td:hover {
 
 .d-none {
     display: none;
+}
+
+.horizontal-line {
+   
+    width: 330px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+.make-vertical {
+    transform: rotate(90deg);
 }
