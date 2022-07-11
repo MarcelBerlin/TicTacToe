@@ -2,21 +2,26 @@ let fields = [];
 let currentShape = 'cross';
 
 function fillShape(id) {
-    if (currentShape == 'cross') {
-        currentShape = 'circle';
-    } else {
-        currentShape = 'cross';
+    if (!fields[id]) {
+        if (currentShape == 'cross') {
+            currentShape = 'circle';
+            document.getElementById('player-1').classList.add('player-inactive');
+            document.getElementById('player-2').classList.remove('player-inactive');
+        } else {
+            currentShape = 'cross';
+            document.getElementById('player-2').classList.add('player-inactive');
+            document.getElementById('player-1').classList.remove('player-inactive');
+        }
+        fields[id] = currentShape;
+        console.log(fields);
+        showImage();
+        checkForWin();
     }
-
-    fields[id] = currentShape;
-    console.log(fields);
-    showImage();
-    checkForWin();
 }
 
 function showImage() {
     for (let i = 0; i < fields.length; i++) {
-        if (fields[i]  == 'circle') {
+        if (fields[i] == 'circle') {
             document.getElementById('circle-' + i).classList.remove('d-none');
         }
 
@@ -53,7 +58,7 @@ function checkForWin() {
     }
     if (fields[2] == fields[4] && fields[4] == fields[6] && fields[2]) {
         winner = fields[2];
-    }  
+    }
     if (!!winner) {
         console.log('GEWONNEN!!:', winner);
     }
