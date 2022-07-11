@@ -43,5 +43,9 @@ td {
 }
 
 td:hover {
-    background-color: rgba(0,0,0,0.10);
+    background-color: rgba(13, 212, 219, 0.2);
+}
+
+.d-none {
+    display: none;
 }
