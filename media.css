@@ -8,14 +8,6 @@
         margin-bottom: -5%;
         font-size: 28px;
     }
-
-    .media-diag-left {
-        transform: rotate(45deg) scaleX(1.0) !important;
-    }
-
-    .media-diag-right {
-        transform: rotate(-45deg) scaleX(1.0) !important;
-    }
 }
 
 @media (max-width: 500px) {
@@ -110,13 +102,7 @@
         left: 118px !important; 
     }
     
-    .media-diag-left {
-        transform: rotate(51deg) scaleX(1.0) !important;
-    }
-
-    .media-diag-right {
-        transform: rotate(-51deg) scaleX(1.0) !important;
-    }
+   
 
 }
 
@@ -132,14 +118,6 @@
 
     .media-right {
         left: 90px !important; 
-    }
-
-    .media-diag-left {
-        transform: rotate(57deg) scaleX(1.0) !important;
-    }
-
-    .media-diag-right {
-        transform: rotate(-57deg) scaleX(1.0) !important;
     }
 
     .shape {
