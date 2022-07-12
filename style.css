@@ -87,11 +87,29 @@ td:hover {
     width: 330px;
     height: 10px;
     background-color: rgba(0,0,0,0.5);
-    position: absolute;
+    position: relative;
     transform: scaleX(0.0);
     transition: transform 225ms ease-in-out;
 }
 
 .make-vertical {
     transform: rotate(90deg) scaleX(0.0);
+}
+
+.btn-lg {
+    margin-top: 3%;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #0D6EFD;
+    border-style: none;
+    border-radius: 5px;
+    
+}
+
+.btn-lg:hover {
+    background-color: #4a81d3;
+
 }

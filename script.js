@@ -82,5 +82,5 @@ function checkForWin() {
 }
 
 function restartGame() {
-    
+    document.location.reload();
 }
