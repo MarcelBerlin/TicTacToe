@@ -1,5 +1,5 @@
 h1 {
-    font-family: 'Calibri', sans-serif;
+    font-family: 'k2d', sans-serif;
     font-size: 48px;
 }
 
@@ -13,7 +13,7 @@ body {
 
 .player {
     display: flex;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'k2d', sans-serif;
     font-size: 32px; 
     font-weight: bold;
     
@@ -23,7 +23,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5%;
     margin-left: 16px;
     margin-right: 16px;
     
@@ -106,6 +105,7 @@ td:hover {
     z-index: 3;
     margin-top: 5%;
     font-size: 26px;
+    font-family: 'k2d', sans-serif;
     cursor: pointer;
     width: 250px;
     height: 70px;

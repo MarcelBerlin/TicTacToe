@@ -1,7 +1,7 @@
 let fields = [];
 let gameOver = false;
 let currentShape = 'cross';
-let audio_end = new Audio ('./sounds/end.wav');
+let audio_end = new Audio('./sounds/end.wav');
 
 function fillShape(id) {
     if (!fields[id] && !gameOver) {
@@ -83,6 +83,7 @@ function checkForWin() {
         setTimeout(function () {
             document.getElementById('game-over').classList.remove('d-none');
             document.getElementById('restart-button').classList.remove('d-none');
+            audio_end.play();
         }, 1000);
     }
 }
