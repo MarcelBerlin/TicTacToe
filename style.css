@@ -93,12 +93,12 @@ td:hover {
     height: 10px;
     background-color: rgba(0,0,0,0.5);
     position: relative;
-    transform: scaleX(0.0);
+    transform: scaleX(1.0);
     transition: transform 225ms ease-in-out;
 }
 
 .make-vertical {
-    transform: rotate(90deg) scaleX(0.0);
+    transform: rotate(90deg) scaleX(1.0);
 }
 
 .restart-button {
