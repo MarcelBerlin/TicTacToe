@@ -1,3 +1,8 @@
+h1 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 48px;
+}
+
 body {
    min-height: 100vh;
    display: flex;
@@ -11,13 +16,14 @@ body {
     font-family: 'Calibri', sans-serif;
     font-size: 32px; 
     font-weight: bold;
-    margin-bottom: 35px;
+    
 }
 
 .player div {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
     margin-left: 16px;
     margin-right: 16px;
     
@@ -83,7 +89,7 @@ td:hover {
 }
 
 .horizontal-line { 
-    z-index: 2;  
+    z-index: 1;  
     width: 330px;
     height: 10px;
     background-color: rgba(0,0,0,0.5);
@@ -96,20 +102,39 @@ td:hover {
     transform: rotate(90deg) scaleX(0.0);
 }
 
-.btn-lg {
-    margin-top: 3%;
-    font-size: 20px;
+.restart-button {
+    z-index: 3;
+    margin-top: 5%;
+    font-size: 26px;
     cursor: pointer;
-    width: 150px;
-    height: 50px;
+    width: 250px;
+    height: 70px;
     color: white;
-    background-color: #0D6EFD;
+    background-color: #004ab9;
     border-style: none;
     border-radius: 5px;
-    
+    animation: zoomIn 225ms ease-in-out;
 }
 
-.btn-lg:hover {
-    background-color: #4a81d3;
+.restart-button:hover {
+    background-color: #1C0B7F;
+}
 
+.game-over {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: 2;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+@keyframes zoomIn {
+    from{
+        transform: scaleX(0)
+    }
+
+    to {
+        transform: scaleX(1);
+    }
 }

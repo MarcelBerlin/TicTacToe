@@ -78,9 +78,16 @@ function checkForWin() {
     if (!!winner) {
         console.log('GEWONNEN!!:', winner);
         gameOver = true;
+
+        setTimeout(function () {
+            document.getElementById('game-over').classList.remove('d-none');
+            document.getElementById('restart-button').classList.remove('d-none');
+        }, 1000);
     }
 }
 
 function restartGame() {
+    gameOver = false;
+    fields = [];
     document.location.reload();
 }
