@@ -1,6 +1,7 @@
 let fields = [];
 let gameOver = false;
 let currentShape = 'cross';
+let audio_end = new Audio ('./sounds/end.wav');
 
 function fillShape(id) {
     if (!fields[id] && !gameOver) {
@@ -76,8 +77,8 @@ function checkForWin() {
 
     }
     if (!!winner) {
-        console.log('GEWONNEN!!:', winner);
         gameOver = true;
+       
 
         setTimeout(function () {
             document.getElementById('game-over').classList.remove('d-none');
