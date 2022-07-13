@@ -65,6 +65,7 @@ tr {
 }
 
 td {
+   
     position: relative;
     cursor: pointer;
     width: 133px;
@@ -126,6 +127,28 @@ td:hover {
     right: 0%;
     width: 100%;
     z-index: 2;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+.draw-img {
+    z-index: 2;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+.win-player {
+    z-index: 3;
+    font-family: 'k2d', sans-serif;
+    font-size: 36px;
+    position: absolute;
+    top: 25%;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #004ab9;
     animation: zoomIn 225ms ease-in-out;
 }
 
